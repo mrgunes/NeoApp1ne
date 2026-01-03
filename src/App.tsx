@@ -5,10 +5,11 @@ import Login from "@/pages/Login";
 import Dashboard from "@/pages/Dashboard";
 import ProtectedRoute from "@/app/ProtectedRoute";
 import GuestRoute from "@/app/GuestRoute";
-
+import Signup from "@/pages/Signup";
 import Admin from "@/pages/Admin";
 import Forbidden from "@/pages/Forbidden";
 import RequireRole from "@/app/RequireRole";
+
 
 export default function App() {
   return (
@@ -24,6 +25,16 @@ export default function App() {
             </GuestRoute>
           }
         />
+
+        <Route
+          path="/signup"
+          element={
+            <GuestRoute>
+              <Signup />
+            </GuestRoute>
+          }
+        />
+
 
         <Route
           path="/dashboard"

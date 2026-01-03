@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	/* Default blockquote styling for notes/callouts */
+	blockquote {
+		@apply border-l-4 border-sky-400 bg-sky-50 text-sky-900 p-4 rounded my-4;
+	}
+
+	/* Generic note/callout classes with variants */
+	.note {
+		@apply p-4 rounded my-4 border-l-4;
+	}
+	.note--info {
+		@apply bg-sky-50 border-sky-400 text-sky-900;
+	}
+	.note--warning {
+		@apply bg-yellow-50 border-yellow-400 text-yellow-900;
+	}
+	.note--success {
+		@apply bg-green-50 border-green-400 text-green-900;
+	}
+}

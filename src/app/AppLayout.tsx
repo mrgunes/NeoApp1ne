@@ -64,12 +64,21 @@ export default function AppLayout() {
                 </button>
               </>
             ) : (
-              <NavLink
-                to="/login"
-                className="rounded-lg border px-3 py-2 text-sm font-medium hover:bg-slate-50"
-              >
-                Login
-              </NavLink>
+              <>
+                <NavLink
+                  to="/login"
+                  className="rounded-lg border px-3 py-2 text-sm font-medium hover:bg-slate-50"
+                >
+                  Login
+                </NavLink>
+
+                <NavLink
+                  to="/signup"
+                  className="rounded-lg border px-3 py-2 text-sm font-medium hover:bg-slate-50"
+                >
+                  Sign up
+                </NavLink>
+              </>
             )}
           </div>
         </div>
